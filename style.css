@@ -1,0 +1,120 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+    color: #ddd;
+    font-family: 'Montserrat', sans-serif;
+}
+img {
+    border-radius: 50%; /* Mantém o formato circular */
+    width: 300px; /* Tamanho do círculo */
+    height: 300px; /* Tamanho do círculo */
+    display: block;
+    margin: 50px ; /* Centraliza a imagem */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra circular */
+    object-fit: cover; /* Preenche todo o círculo sem deixar bordas */
+}
+
+
+
+img:hover {
+    transform: scale(1.05); /* Adiciona um leve zoom ao passar o mouse */
+}  
+
+
+.descricao {
+    width: 300px;
+}
+
+h2 {
+    margin-bottom: 5px;
+}
+
+.duracao {
+    width: 300px;
+    margin-top: 25px;
+}
+
+.barra {
+    width: 300px;
+    height: 6px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+progress {
+    height: 6px;
+    width: 0;
+    background-color: #333;
+}
+
+.ponto {
+    width: 20px;
+    height: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+    margin-left: -10px;
+}
+
+.tempo {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}
+
+.player {
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.botao-play, .botao-pause {
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.setas {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.botao-pause {
+    display: none;
+}
+.countdown {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: rgb(255, 255, 255);
+    gap: 32px;
+  }
+  
+  .title {
+    grid-column: 4 span;
+    text-align: center;
+    font-size: 22px;
+  }
+  
+  .box {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .value {
+    font-size: 64px;
+    font-weight: 700;
+  }
+  
+  .name {
+    font-size: 16px;
+  }
